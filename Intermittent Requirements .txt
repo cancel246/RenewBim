@@ -1,0 +1,22 @@
+//Web Crawler that gets infor from amazon site 
+The focus is showing cost savings from using renewable energy to power kitchen appliances. We're focusing on the kitchen because
+that is the room that pulls the most energy.
+3 sections..
+1st section = lists the appliances for the model numbers you put in. Shows the model number, brand, name
+watts of appliance, approx cost to run per hour in BIM
+
+2nd section = lists the cost of buying and installing a renewable energy solution like solar panels that will cover
+the wattage from appliances. Lists the wattage supplied by the renewable energy solution.
+Tells the user how long it will take to get back their investment and how much they would be saving afterwards
+factoring in maintenance costs for the renewable energy solution.
+Gives an approximate interval to when they would need to be maintained (eg every 5 years)
+
+
+3rd section = lists the cost of buying energy efficient appliances to replace current appliances. 
+Lists how much watss the energy efficient appliances use.
+Lists how much watts the renewable energy solution generates.
+Lists the cost of buying and installing renewable energy solutions like solar panels to power these energy efficicient appliances.
+Lists how much less watts the appliances consume vs old appliances. Displays total cost of implementing both
+solutions.
+Tells the user how long it will take to get back their investment and how much they would be saving 
+afterwards compared to before factoring in maintenance costs for the panels
