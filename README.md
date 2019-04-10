@@ -1,2 +1,2 @@
 # RenewBim
-Project for the RenewBim Project
+Repository for the RenewBim Project
