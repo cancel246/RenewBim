@@ -9,6 +9,10 @@
 
 /* Basic */
 
+    html {
+        scroll-behavior: smooth;
+    }
+
 	body {
 		background: #222222;
 	}
