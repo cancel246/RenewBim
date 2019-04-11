@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 11, 2019 at 11:35 PM
+-- Generation Time: Apr 11, 2019 at 11:56 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.3
 
@@ -49,6 +49,21 @@ INSERT INTO `appliances` (`ModelNum`, `ItemType`, `Brand`, `Watts`, `cost`) VALU
 ('R24781', 'Toaster', 'Hamilton Beach', '2.00', '75.00'),
 ('SC712U', 'Oven', 'Linea', '2.75', '299.00'),
 ('SOU330X1', 'Oven', 'Smeg', '3.50', '2699.00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `efficient`
+--
+
+CREATE TABLE `efficient` (
+  `ModelNum` varchar(25) NOT NULL,
+  `Brand` varchar(35) NOT NULL,
+  `Type` varchar(35) NOT NULL,
+  `Cost` decimal(10,2) NOT NULL,
+  `Watts` decimal(10,2) NOT NULL,
+  `Savings` decimal(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
