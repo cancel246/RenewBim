@@ -1,32 +1,5 @@
 <!DOCTYPE HTML>
 
-<?php
-
-$hostname = "localhost";
-$username = "root";
-$password = "";
-$database = "renew_bim";
-
-$conn = mysqli_connect($hostname, $username, $password, database);
-
-if (!$conn) {
-    echo "Connection failed:" . PHP_EOL;
-    exit;
-}
-
-
-$model = $_POST["modelNo"];
-
-if($sql = $mysqli->query("SELECT Cost FROM applicances"))
-{
-    print($sql->num_rows);
-        $sql->close();
-}
-
-
-?>
-
-
 <html>
 	<head>
 		<title>RenewBim - Energy Efficiency Calculator</title>
@@ -46,6 +19,44 @@ if($sql = $mysqli->query("SELECT Cost FROM applicances"))
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
+        
+        <?php
+
+            $hostname = "localhost";
+            $username = "root";
+            $password = "";
+            $database = "renew_bim";
+
+            $conn = mysqli_connect("localhost", "root", "", "renew_bim");
+
+            if (!$conn) {
+                die ("Connection failed:" . mysqli_connect_error());
+                exit;
+            }
+            
+
+
+            $model = $_POST["modelNo"];
+
+            $sql = "SELECT Cost FROM appliances WHERE ModelNum ='" .$model "'";
+        
+            $results=mysqli_query($conn, $sql);
+        
+            if (mysqli_num_rows($results)>0) {
+                while($row=mysqli_fetch_assoc($results)){
+                    echo $row[1]." " . $row[2]. " ". $row[3]. " ". $row[4]. " ". $row[5];
+                    echo <br/>;
+                }
+            }
+            
+           /* if($sql = $mysqli->query("SELECT Cost FROM applicances where ModelNum = '$model'"))
+            {
+                print($sql->num_rows);
+                    $sql->close();
+            }
+*/
+
+        ?>
 
 		<!-- Header Wrapper -->
 			<div class="wrapper style1">
