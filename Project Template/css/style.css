@@ -135,6 +135,14 @@
 		padding-top: 3em;
 	}
 
+/*span */
+span #a #b #c {
+    display: inline-block;
+    font-size: 24px;
+    width: 33%;
+    font-weight: bold;
+}
+
 /* Form */
 
 	input[type="text"],
@@ -382,12 +390,12 @@
 /* Tables */
 
 	table {
-		width: 30%; 
+		width: 33%;
         background-color: #000000;
         border-radius: 10px;
         color: #f3f8ec;
         font-size: 18px;
-        font-family: inherit;
+        font-family: inherit;   
         display: inline-block;
 	}
 
@@ -402,11 +410,15 @@
             
             table th{
                 font-weight: bold;
-                font-size: 14px;
+                font-size: 15.5px;
+                padding: 0.5em 1em 0.5em 1em;
+                width: 16%;
             }
             table tr{
                 font-weight: bold;
-                font-size: 14px;
+                font-size: 15.5px;
+                padding: 0.5em 1em 0.5em 1em;
+                width: 16%;
             }
 
 			table.default tbody tr {
@@ -414,12 +426,12 @@
 			}
 
 			table.default td {
-				padding: 0.5em 1em 0.5em 1em;
+				padding: 0.5em 2em 0.5em 2em;
 			}
 
 			table.default th {
 				font-weight: 700;
-				padding: 0.5em 1em 0.5em 1em;
+				padding: 0.5em 2em 0.5em 2em;
 				text-align: left;
   
 			}
@@ -501,7 +513,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0em 4em 0em;
+		padding: 3em 0em 2em 0em;
 	}
 
 		.wrapper.style1 {
@@ -557,8 +569,8 @@
 		}
 
 			.wrapper.style3 .container {
-				padding-left: 6em;
-				padding-right: 6em;
+				padding-left: 0em;
+				padding-right: 0em;
 			}
 
 			.wrapper.style3 p {
@@ -834,8 +846,3 @@
 		font-weight: 700;
 	}
 
-/* Span */
-
-span .align-left{
-    width: 33%;
-}
