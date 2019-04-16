@@ -382,25 +382,32 @@
 /* Tables */
 
 	table {
-		width: 100%;
+		width: 30%; 
         background-color: #000000;
         border-radius: 10px;
         color: #f3f8ec;
         font-size: 18px;
         font-family: inherit;
+        display: inline-block;
 	}
 
-		table.default {
+
+
+
+		 table.default {
 			width: 100%;
 		}
-table th{
-                  font-weight: bold;
-                    font-size: 14px;
-}
-table tr{
-    font-weight: bold;
-    font-size: 14px;
-}
+
+
+            
+            table th{
+                font-weight: bold;
+                font-size: 14px;
+            }
+            table tr{
+                font-weight: bold;
+                font-size: 14px;
+            }
 
 			table.default tbody tr {
 				border-bottom: solid 1px #82b440;
@@ -826,3 +833,9 @@ table tr{
 		text-transform: uppercase;
 		font-weight: 700;
 	}
+
+/* Span */
+
+span .align-left{
+    width: 33%;
+}
