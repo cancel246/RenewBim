@@ -215,7 +215,7 @@
 
 			.image.fit img {
 				display: block;
-				width: 100%;
+				width: 0%;
 			}
 
 		.image.feature {
@@ -225,7 +225,7 @@
 
 			.image.feature img {
 				display: block;
-				width: 100%;
+				width: 0%;
 			}
 
 /* Icon */
