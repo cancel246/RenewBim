@@ -68,7 +68,7 @@ def updateDB():
 	print(prodWatts)
 	print(prodPrice)
 
-	return results
+	return json.dumps(results)
 
 if __name__ == '__main__':
 	updateDB()

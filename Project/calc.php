@@ -75,18 +75,7 @@
 
 			</div>
 		
-	<!-- Section One -->
-			<div class="wrapper style2">
-				<section class="container">
-					<header class="major">
-					   <h2>Explanation</h2>
-                        <span class="byline">
-                            
-                        </span>
-                    </header>
-				</section>
-			</div>		
- 
+
 		<!-- Section Two -->
 			<div class="wrapper style3">
 				<section class="container">

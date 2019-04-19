@@ -9,9 +9,10 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 ?>
 <?php
-$request = escapeshellcmd("python C:/xampp/htdocs/Project/update/data_scraper.py");
+$request = escapeshellcmd("python C:/xampp/htdocs/Project/data_scraper.py");
+$result = exec($request);
 
-system($request);
+
 //$output = shell_exec($result);
 //$result = system("data_scraper.py",$reval);
 
